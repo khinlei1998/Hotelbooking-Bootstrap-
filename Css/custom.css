@@ -1,0 +1,33 @@
+h1{
+	color: red;
+	
+}
+.jumbotron
+{
+	border-radius: 0;
+	background-color: #9eaebd;
+	text-align:center;
+}
+.mytitle{
+	border-radius: 1rem;
+	background-color: #6c757d7a;
+}
+/*.bg-secondary{
+	background-color: #afb8c0;
+	border-radius: 2rem;
+
+
+}*/
+.container hr{
+	color: pink;
+}
+.package-titile{
+	display: inline-block;
+	border-bottom: 1px solid black;
+	border-top: 0.5rem;
+}
+.faq{
+	display: inline-block;
+	border-bottom: 1px solid black;
+	border-top: 0.5rem;
+}

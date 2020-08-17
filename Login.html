@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial-scale-1,shrink-to-fit-no">
+
+	<!-- Bootstrap css -->
+	 <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+
+	 <!-- calendar -->
+		 <script src="http://code.jquery.com/jquery-1.9.1.js"></script> 
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script> 
+		
+	
+
+	<!-- Bootstrap js -->
+	 <script type="text/javascript" src="bootstrap/js/bootstrap.bundle.min.js"></script>
+	<!-- Custom css -->     
+	 <link rel="stylesheet" type="text/css" href="Css/hotel.css">
+
+	 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+<!-- Image and text -->
+<nav class="navbar navbar-expand-md ">
+	<div class="container">
+		<i class="fas fa-hotel fa-3x"></i>
+		
+	 	<p style="font-family:Comic Sans MS, Comic Sans, cursive;font-size: 30px">Hotel Dreamz</p>
+
+		<button class="navbar-toggler" data-toggle="collapse" data-target="#mynav">
+				<!-- button mhr achg loh paw pho togle nat yay nav bar togle -->
+			<span class="navbar-toggler-icon">
+					
+			</span>
+
+		</button>
+			<div class="collapse navbar-collapse" id="mynav">
+
+				<ul class="navbar-nav ml-auto"> 
+				  <!-- right kt ag -->
+					<li class="nav-item mx-3">
+						<!-- home nae about kwar twar ag -->
+						<a href="index.html" >Home</a>
+					</li>
+					<li class="nav-item mx-3">
+						<a href="About.html">About</a>
+					</li>
+					<li class="nav-item mx-2">
+						<a href="Room.html">Room</a>
+					</li>
+
+					<li class="nav-item mx-2">
+						<a href="Weddings.html">Weddings</a>
+					</li>
+
+					<li class="nav-item mx-2">
+						<a href="Facilities.html">Facilities</a>
+					</li>
+
+					<li class="nav-item mx-2">
+						<a href="Dinning.html">Dinning</a>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nva-link dropdown-toggle"  href="#" data-toggle="dropdown" >Account</a>
+						<div class="dropdown-menu">
+							
+							<a class="dropdown-item" href="Signup.html">Sign Up</a>
+							<div class="dropdown-divider" href="#"></div>
+							<a class="dropdown-item" href="Login.html">Login</a>
+
+						</div>
+
+					</li>					
+				</ul>
+			</div>
+	</div>
+</nav>
+		<h2>Login</h2>
+		
+			<div class="jumbotron" style="margin-top: 100px;margin-top: 29px;">
+			
+				<div class="row">
+					<div class="col-md-6">
+						<p>Email:</p>
+						<input type="email" name="email" id="username" placeholder="Enter Email" class="form-control">
+					</div>
+					<div class="col-md-6">
+						<p>Password:</p>
+						<input type="password" name="password" id="password" placeholder="Enter Password" class="form-control">
+					</div>
+
+					
+				
+					<button type="submit" class="btn btn-info btn-block" id="btnlogin" style="margin-top: 30px;">Login</button>
+				</div>
+			</div>
+	<div class="container-fluid contact">
+		<div class="form-row">	
+			<div class="col-md-6">
+				<h2 class="contact my-3">Contact Us</h2>
+				<p class="contactus">Email: exaple@gmail.com</p>
+				<p class="contactus">Telephone: 098559</p>
+				<p class="contactus">Address:No. 82, Sin Phyu Shin Avenue, Pyay Road, 6½ Mile, Ward 11, Hlaing Township, Yangon, Myanmar</p>
+				<p class="contactus">Yangon,Myanmar</p>
+				
+				
+			
+			</div>
+			<div class="col-md-6">
+				<h2 class="contact my-3">Social media</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				<div class="icon">
+					<i class="fab fa-facebook-square"></i>
+					<i class="fab fa-instagram"></i>
+					<i class="fab fa-google-plus-g"></i>
+					<i class="fab fa-twitter"></i>
+					<i class="fab fa-line"></i>
+			</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		
+		$("#btnlogin").click(function(){
+			var username=$("#username").val();
+			var password=$("#password").val();
+
+			var customerlistjson=localStorage.getItem('customerlistjson');
+			if(customerlistjson){
+			var customerlistobj=JSON.parse(customerlistjson); //obj pyit
+			}
+			console.log(customerlistobj);
+		
+			for(let i=0; i<customerlistobj.customerlist.length; i++)
+			{
+				if(customerlistobj.customerlist[i].email==username &&
+				customerlistobj.customerlist[i].password==password){
+					window.alert("Login Successfully");
+					document.location.href="Home.html"
+       								 
+				}else{
+					window.alert("Something Wrong");
+					document.location.href="Login.html"
+					}
+			}			
+		})				
+	})
+</script>

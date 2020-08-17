@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial-scale-1,shrink-to-fit-no">
+
+	<!-- Bootstrap css -->
+	 <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+
+	 <!-- calendar -->
+	 <script src="http://code.jquery.com/jquery-1.9.1.js"></script> 
+     <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script> 
+		
+	<!-- Bootstrap js -->
+	 <script type="text/javascript" src="bootstrap/js/bootstrap.bundle.min.js"></script>
+	<!-- Custom css -->     
+	 <link rel="stylesheet" type="text/css" href="Css/hotel.css">
+
+	 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+<!-- Image and text -->
+<nav class="navbar navbar-expand-md ">
+	<div class="container">
+		<i class="fas fa-hotel fa-3x"></i>
+		
+	 	<p style="font-family:Comic Sans MS, Comic Sans, cursive;font-size: 30px">Hotel Dreamz</p>
+
+		<button class="navbar-toggler" data-toggle="collapse" data-target="#mynav">
+				<!-- button mhr achg loh paw pho togle nat yay nav bar togle -->
+			<span class="navbar-toggler-icon">
+					
+			</span>
+
+		</button>
+			<div class="collapse navbar-collapse" id="mynav">
+
+				<ul class="navbar-nav ml-auto"> 
+				  <!-- right kt ag -->
+					<li class="nav-item mx-1">
+						<!-- home nae about kwar twar ag -->
+						<a href="index.html" >Home</a>
+					</li>
+					<li class="nav-item mx-1">
+						<a href="About.html">About</a>
+					</li>
+
+					<li class="nav-item mx-1">
+						<a href="Room.html">Room</a>
+					</li>
+
+					<li class="nav-item mx-1">
+						<a href="Weddings.html">Weddings</a>
+					</li>
+
+					<li class="nav-item mx-1">
+						<a href="Facilities.html">Facilities</a>
+					</li>
+
+					<li class="nav-item mx-1">
+						<a href="Dinning.html">Dinning</a>
+					</li>
+					
+
+					<li class="nav-item dropdown">
+						<a class="nva-link dropdown-toggle"  href="#" data-toggle="dropdown" >Account</a>
+						<div class="dropdown-menu">
+							
+							<a class="dropdown-item" href="Signup.html">Sign Up</a>
+							<div class="dropdown-divider" href="#"></div>
+							<a class="dropdown-item" href="Login.html">Login</a>
+							
+
+						</div>
+
+					</li>					
+				</ul>
+			</div>
+	</div>
+</nav>
+
+<div class="carousel slide" data-ride="carousel" id="mycarousel">
+
+  <!-- Indicators -->
+  <!-- <ul class="carousel-indicators">
+	<li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+	<li data-target="#mycarousel" data-slide-to="1"></li>
+	<li data-target="#mycarousel" data-slide-to="2"></li>
+ </ul> -->
+
+  
+<div class="carousel-inner">
+	<div class="carousel-item active">
+		<img src="images/slide-4.png" width="1500" height="500"alt="Welcome to Hotel Dreamz">
+		<div class="carousel-caption d-none d-md-block ">
+         	<h1>Welcome to Hotel Dreamz</h1>
+         	<h4>Choose Your Room</h4>
+       	</div>
+	</div>
+
+	<div class="carousel-item">
+		<img src="images/slide-2.png" width="1500" height="500" >
+		<div class="carousel-caption d-none d-md-block">
+         	<h1>Feel Like Your Home</h1>
+         	<h4>Save a bonus 10% on weekday days</h4>
+       	</div>
+	</div>
+
+	<div class="carousel-item ">
+		<img src="images/slide-3.png" width="1500" height="500">
+		<div class="carousel-caption d-none d-md-block">
+         	<h1>Perfect Place for Dining</h1>
+         	<h4>If u are tired of long travelling relax and recover at Hotel Dreamz</h4>
+       	</div>
+	</div>
+
+  <a href="#mycarousel" class="carousel-control-prev" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a href="#mycarousel" class="carousel-control-next" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+</div>
+
+
+<h2 class="contact"><i class="far fa-laugh-beam">Book U stay</i></h2>
+
+		<form class="form-inline my-5 mx-3">
+		  <label for="email">Check In:</label>
+		  <input type="date"  class="form-control mx-2" id="checkin"  >
+		  <label for="pwd">Check Out:</label>
+		  <input type="date" class="form-control mx-2" id="checkout" >
+		   <label for="pwd">Location:</label>
+		  <input type="text" class="form-control mx-2" id="pwd" placeholder="Yangon, Myanmar" disabled="disabled">
+		  	<select class="custom-select mx-3">
+				<option selected="">Adult</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+
+			</select>
+
+			<select class="custom-select mx-4">
+				<option selected="">Child</option>
+				<option>0</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+
+			</select>
+
+			<button type="button" class="btn btn-outline-secondary" id="btnsearch" onClick="location.href='Room.html'">Search Room</button>  
+		</form>
+
+		<h2 class="contact">Others Recommended by Dreamz Hotel </h2>
+		<div class="container">
+			<div class="form-row row ">
+				<div class="hover03 col-md-4">
+					<figure><img src="images/180817-1-2000-pro-yangon-hotel.jpg.thumb.1920.1920.jpg" style="width:200px height100px;"></figure>
+					<h3>Best Ever Happy Birthday</h3>
+					<p>Perfect surprise birthday party!</p>
+					<p> PACKAGE USD 185 ~ </p>
+				</div>
+
+				<div class="hover03 col-md-4">
+					<figure><img src="images/20190225-02-2000-pkg-LTYG.jpg.thumb.1920.1920.jpg"></figure>
+					<h3>Special Moment</h3>
+					<p>Start out your new life together making memories of Special moments in luxurious comfort.</p>
+						<p> PACKAGE USD 175 ~ </p>
+				</div>
+
+				<div class=" hover03 col-md-4">
+					<figure><img src="images/8444c3fc9142170d40c7c86879a279bd.jpg"></figure>
+					<h3>Dreamz wedding Show</h3>
+					<p>Feel the Pure & Elegant Style</p>
+					
+				</div>
+			</div>
+		</div>
+
+<div class="container-fluid contact">
+		<div class="form-row roww">	
+			<div class="col-md-6">
+				<h2 class="contact my-3">Contact Us</h2>
+				<p class="contactus">Email: exaple@gmail.com</p>
+				<p class="contactus">Telephone: 098559</p>
+				<p class="contactus">Address:No. 82, Sin Phyu Shin Avenue, Pyay Road, 6½ Mile, Ward 11, Hlaing Township, Yangon, Myanmar</p>
+				<p class="contactus">Yangon,Myanmar</p>
+				
+				
+			
+			</div>
+			<div class="col-md-6">
+				<h2 class="contact my-3">Social media</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				<div class="icon">
+					<i class="fab fa-facebook-square"></i>
+					<i class="fab fa-instagram"></i>
+					<i class="fab fa-google-plus-g"></i>
+					<i class="fab fa-twitter"></i>
+					<i class="fab fa-line"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+
+
+
+		$('#mycarousel').Carousel({
+			interval: 1000
+		})
+
+
+
+		
+	})
+
+
+</script>
+	
+</body>
+</html>
